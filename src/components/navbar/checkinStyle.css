@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.checkin-body {
+    height: 100vh;
+    background-image: url('../../assets/img/coworking-cover.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    text-align: center;
+    width: 600px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.input-box form input {
+    height: 50px;
+    font-size: large;
+}

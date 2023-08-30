@@ -1,0 +1,758 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-image: url('../../assets/img/coworking-cover.jpg');
+    background-size: cover;
+    /* width: 100%; */
+    /* height: 110vh; */
+}
+
+.header .sticky-nav {
+    background-color: #767373;
+    color: #000;
+}
+
+.navbar-brand {
+    font-family: 'Martel', serif;
+    font-weight: lighter;
+}
+
+.navbar-nav a {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #aaaaaa;
+}
+
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255.1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav {
+    height: 100px;
+    align-items: center;
+}
+
+.banner-text-form {
+    /* height: 80vh; */
+    padding-top: 150px;
+    justify-content: space-between;
+}
+
+.banner-title {
+    font-family: 'Martel', serif;
+}
+
+.banner-paragraph {
+    font-family: "Montserrat", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+}
+
+.box-form {
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+form input {
+    margin-bottom: 15px;
+}
+
+form .btn-order {
+    width: 100%;
+    height: 40px;
+    background-color: #ffc107;
+    box-shadow: none;
+}
+
+form .btn-order:hover{
+    background-color: #ffffff00;
+    box-shadow: none;
+    border: 1px #ffc107 solid;
+    color: #ffc107;
+}
+
+.pricing {
+    background-color: #ffffff;
+}
+
+.pricing-header {
+    padding: 120px 70px 70px;
+}
+
+.pricing-header .pricing-title {
+    font-family: 'Martel', serif;
+}
+.pricing-header .pricing-paragraph {
+    font-family: "Montserrat", Helvetica;
+    width: 750px;
+    margin: auto;
+}
+
+.pricing-box {
+    border: 2.5px solid #EFF1F3;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pricing-main {
+    margin: auto;
+    margin-top: 70px;
+}
+
+ .pricing .pricing-main .pricing-box {
+    /* width: 100%; */
+    margin: 0 auto 30px;
+    padding: 50px 45px;
+}
+
+.pricing-box .pricing-box-header{
+    text-align: left;
+}   
+
+ #pricing .pricing-box .pricing-box-header h3 {
+    font-size: 2.2em;
+    margin: 0;
+} 
+
+.pricing-price .currency{
+    font-size: 25px;
+    margin-right: 2px;
+}
+
+
+.pricing-box-header p {
+    margin-top: 0;
+}
+
+.pricing-price .price{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.pricing-box-header .pricing-price .time{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pricing-facility {
+    margin-top: 30px;
+}
+
+.pricing-facility .header h5 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.pricing-facility .header p {
+    line-height: normal;
+}
+
+.pricing-facility .plan ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-facility .plan ul li{
+    margin-bottom: 10px;
+
+}
+
+.pricing-facility .plan .icon-check {
+    color: rgb(255, 0, 0);
+    margin-right: 10px;
+}
+
+.pricing-footer {
+    margin-top: 40px;
+}
+
+.pricing-footer .btn-order-pricing {
+    width: 100%;
+    height: 50px;
+    background-color: #ffc107;
+    box-shadow: none;
+}
+
+.pricing-footer .btn-order-pricing:hover{
+    background-color: #ffffff00;
+    box-shadow: none;
+    border: 1px #ffc107 solid;
+    color: #ffc107;
+}
+
+/* GALLERY */
+#gallery {
+    /* height: 400px; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* ------------------ */
+
+
+/* WHY US */
+#why-us .why-us {
+    text-align: center;
+    height: 570px;
+    background-image: url('../../assets/img/why-us.jpg');
+    background-size: contain;
+    padding-top: 120px;
+    margin-bottom: 120px;
+}
+
+.why-us h2 {
+    font-family: 'Martel', serif;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.why-us .box {
+    background: #fff;
+    border: 0.1px solid rgb(168, 168, 168);
+    padding: 15px;
+    border-radius: 8px;
+    width: 50%;
+    margin: 0 auto 10px;
+    background: #fff;
+    color: #737373;
+    font-family: 'Open Sans', sans-serif;
+}
+/* -------------------- */
+
+/* FOOTER */
+#footer {
+    height: auto;
+}
+
+#footer .footer-top {
+    background: #151515;
+    height: 400px;
+}
+
+.footer-top .navbar-brand {
+    font-size: 25px;
+    padding: 40px 0 100px;
+    width: 100%;
+    text-align: left;
+    font-family: 'Martel', serif;
+    font-weight: lighter;
+}
+
+.footer-top ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-top li a {
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+.footer-top input {
+    height: 50px;
+}
+
+.footer-top .btn-subscribe {
+    background-color: #EC1C23;
+    color: #fff;
+}
+
+#footer .footer-bottom {
+    color: #fff;
+    height: 80px;
+    background-color: #156797;
+}
+
+#footer .footer-bottom p {
+    margin-top: 18px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    /* background-color: red; */
+}
+
+/* ------------------- */
+
+input::placeholder {
+    font-family: 'Inter', sans-serif;
+}
+
+@media only screen and (max-device-width: 767px) {
+
+    #header {
+        height: 900px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    nav .navbar-brand {
+        font-size: 15px;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: #000;
+        font-size: 30px!important;
+    }
+
+    .banner-text-form {
+        padding-top: 120px;
+    }
+
+    .box-form {
+        width: 90%;
+        margin: auto;
+        padding: 40px 40px;
+    }
+
+    .banner-title {
+        margin-top: 200px;
+    }
+
+    .banner-paragraph {
+        font-size: 1em;
+        line-height: normal;
+        margin-bottom: 200px;
+    }
+
+    .banner-text-form .box-form {
+        text-align: center;
+        width: 95%;
+        padding: 30px 20px;
+    }
+
+    .box-form .btn-order {
+        height: 40px;
+    }
+
+    #pricing .pricing {
+        margin-top: 330px;
+        /* background: #000; */
+    }
+
+    .pricing-header {
+        padding: 0 20px;
+        /* background: #000; */
+    }
+
+    .pricing-header .pricing-paragraph {
+        width: 100%;
+    }
+
+    .pricing-main {
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    .pricing-box {
+        border: 0.6px solid #000;
+        border-radius: 8px;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .pricing-main {
+        margin: auto;
+        margin-top: 70px;
+    }
+    
+    .pricing .pricing-main .pricing-box {
+        width: 300px;
+        margin: 0 auto 30px;
+        /* background: bisque; */
+        padding: 30px 25px;
+    }
+    
+    .pricing-box .pricing-box-header{
+        text-align: left;
+    }   
+    
+    .pricing-box .pricing-box-header h3 {
+        font-weight: bold;
+        font-size: 2em;
+    } 
+    
+    .pricing-price .currency{
+        font-size: 25px;
+        margin-right: 2px;
+    }
+    
+    .pricing-price .price{
+        font-size: 35px;
+        font-weight: bolder;
+    }
+    
+    .pricing-price .time{
+        font-size: 20px;
+    
+    }
+    
+    .pricing-facility {
+        margin-top: 30px;
+    }
+    
+    .pricing-facility .header h5 {
+        font-weight: bold;
+    }
+    
+    .pricing-facility .header p {
+        line-height: normal;
+    }
+    
+    .pricing-facility .plan ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .pricing-facility .plan ul li{
+        margin-bottom: 10px;
+    
+    }
+    
+    .pricing-facility .plan .icon-check {
+        color: rgb(255, 0, 0);
+        margin-right: 10px;
+    }
+    
+    .pricing-footer {
+        margin-top: 40px;
+    }
+    
+    .pricing-footer .btn-order-pricing {
+        width: 100%;
+        height: 50px;
+        background-color: #ffc107;
+        box-shadow: none;
+    }
+    
+    .pricing-footer .btn-order-pricing:hover{
+        background-color: #ffffff00;
+        box-shadow: none;
+        border: 1px #ffc107 solid;
+        color: #ffc107;
+    }
+
+    #why-us .why-us {
+        text-align: center;
+        height: 550px;
+        padding-top: 100px;
+    }
+
+    .why-us .box {
+        padding: 15px;
+        border-radius: 8px;
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    .footer .navbar-brand {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    #footer .footer-top {
+        height: 820px;
+    }
+
+    #footer .footer-bottom {
+        height: 60px;
+        text-align: center;
+    }
+
+    .footer-top .navbar-brand {
+        padding: 40px 0 80px;
+    }
+
+}
+
+@media only screen and (min-device-width: 768px){
+
+    #header {
+        height: 620px;
+    }
+
+    .navbar-brand {
+    font-size: 20px;
+    }
+
+   .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    color: #fff;
+   }
+
+   .banner-title {
+    font-size: 1.5em;
+   }
+
+   .banner-paragraph {
+    font-size: 0.9em;
+    line-height: normal;
+   }
+
+   .banner-text-form .box-form {
+    padding: 20px;
+    width: 300px;
+   }
+
+   .box-form h3 {
+    font-size: 20px;
+   }
+
+   form input {
+    height: 35px;
+    font-size: 1px;
+    margin-bottom:10px;
+   }
+
+   form .input-date {
+    margin-bottom: 5px;
+   }
+
+   .box-form .btn-order {
+    height: 30px;
+    font-size: 10px;
+   }
+
+   #pricing .pricing {
+    margin-top: 20px;
+   }
+
+   .pricing-header .pricing-paragraph {
+    width: 80%;
+   }
+
+   .pricing-header {
+    /* background: #000; */
+    padding-bottom: 20px;
+   }
+
+   .pricing .pricing-main .pricing-box {
+    width: 230px;
+    padding: 20px 18px;
+   }
+
+   .pricing-box .pricing-box-header h3 {
+    font-size: 2em;
+   }
+
+   .pricing-price .currency {
+    font-size: 15px;
+   }
+
+   .pricing-price .price {
+    font-size: 30px;
+   }
+
+   .pricing-box-header .pricing-price .time {
+    font-weight: 100;
+    font-size: 15px;
+   }
+
+   #footer .footer-top {
+    height: 820px;
+}
+
+}
+
+@media only screen and (min-device-width: 1024px) {
+
+    #header {
+        height: 720px;
+    }
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+   .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    color: #fff;
+   }
+
+   .banner-title {
+    font-size: 1.9em;
+   }
+
+   .banner-paragraph {
+    font-size: 0.9em;
+    line-height: normal;
+   }
+
+   .banner-text-form .box-form {
+    padding: 15px 15px;
+    width: 330px;
+   }
+
+   .box-form h3 {
+    font-size: 20px;
+   }
+
+   form input {
+    height: 35px;
+    font-size: 1px;
+    margin-bottom:10px;
+   }
+
+   form .input-date {
+    margin-bottom: 5px;
+   }
+
+   .box-form .btn-order {
+    height: 30px;
+    font-size: 10px;
+   }
+
+   .pricing {
+    margin-top: 10px;
+   }
+
+   .pricing-header .pricing-paragraph {
+    width: 100%;
+   }
+
+   .pricing-header {
+    padding-bottom: 20px;
+   }
+
+   .pricing .pricing-main .pricing-box {
+    width: 290px;
+    padding: 30px 30px;
+   }
+
+   .pricing-box .pricing-box-header h3 {
+    font-size: 2em;
+   }
+
+   .pricing-price .currency {
+    font-size: 15px;
+   }
+
+   .pricing-price .price {
+    font-size: 30px;
+   }
+
+   .pricing-price .time {
+    font-size: 15px;
+   }
+
+   .footer-menu input {
+    width: 10px;
+   }
+
+   #footer .footer-top {
+    height: 420px;
+}
+
+}
+
+@media only screen and (min-device-width: 1440px) {
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    #header {
+        height: 720px;
+    }
+
+   .nav-item .nav-link {
+    font-size: 15px;
+   }
+
+   .banner-text-form{
+    /* background: #000; */
+    padding-top: 200px;
+   }
+
+   .banner-title {
+    font-size: 3em;
+   }
+
+   .banner-paragraph {
+    font-size: 1.5em;
+    line-height: normal;
+   }
+
+   .banner-text-form .box-form {
+    padding: 25px 25px;
+    width: 400px;
+   }
+
+   .box-form h3 {
+    font-size: 20px;
+   }
+
+   form input {
+    height: 35px;
+    font-size: 1px;
+    margin-bottom:10px;
+   }
+
+   form .input-date {
+    margin-bottom: 5px;
+   }
+
+   .box-form .btn-order {
+    margin-top: 10px;
+    height: 40px;
+    font-size: 10px;
+   }
+
+   .pricing-header .pricing-paragraph {
+    width: 80%;
+   }
+
+   .pricing-header {
+    /* background: #000; */
+    padding-bottom: 20px;
+   }
+
+   .pricing .pricing-main .pricing-box {
+    width: 350px;
+    padding: 30px 30px;
+   }
+
+   .pricing-box .pricing-box-header h3 {
+    font-size: 3em;
+   }
+
+   .pricing-price .currency {
+    font-size: 25px;
+   }
+
+   .pricing-price .price {
+    font-size: 45px;
+   }
+
+   .pricing-price .time {
+    font-size: 20px;
+   }
+
+}
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+}

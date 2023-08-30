@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#checkout {
+    background-image: url('../../assets/img/banner.jpg');
+    margin: 0;
+    padding: 25px 0;
+}
+
+.detail-booking {
+    padding: 30px 50px;
+    /* background-color: #e8e7e755; */
+    border-radius: 20px;
+    font-family: 'poppins';
+}
+
+.detail-booking .navbar-brand {
+    /* letter-spacing: normal; */
+    color: #000000;
+    text-align: right;
+    margin-right: 0;
+}
+
+.detail-booking .address {
+    text-align: right;
+}
+
+.detail-booking .btn-pay {
+    width: 200px;
+    margin-left: auto;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.detail-booking .title {
+    margin-top: 70px;   
+}
+
+.detail-booking .profile td {
+    font-weight: 100;
+}
+
+.detail-booking .detail-order-booking {
+    height: 200px;
+}
+
+@media only screen and (max-device-width: 767px) {
+    .detail-booking {
+        padding: 20px;
+    }
+
+    .detail-booking .navbar-brand {
+        /* letter-spacing: normal; */
+        color: #000000;
+        text-align: center;
+        margin: auto;
+    }
+
+    .detail-booking .title {
+        margin: 70px 0 0;
+    }
+
+    .detail-booking .address {
+        margin: auto;
+        text-align: center;
+    }
+
+    .detail-booking .profile {
+        margin-bottom: 20px;
+    }
+
+    .detail-booking .detail-order-booking {
+        height: 200px;
+    }
+
+    .detail-booking .btn-pay {
+        width: 150px;
+        margin: auto;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-device-width: 768px){
+
+}
