@@ -11,9 +11,9 @@ const Footer = () => {
                     <div className="col-lg-2 footer-menu text-white">
                         <p>Menu</p>
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Why Us</a></li>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#why-us">Why Us</a></li>
                         </ul>
                     </div>
                     {/* <div className="col-lg-2 footer-menu text-white">
@@ -34,13 +34,13 @@ const Footer = () => {
                             <li><a href="">API</a></li>
                         </ul>
                     </div> */}
-                    <div className="col-lg-4 col-sm-6 footer-menu text-white">
+                    {/* <div className="col-lg-4 col-sm-6 footer-menu text-white">
                         <p>Get In Touch</p>
                         <div class="input-group mb-3">
                         <input type="email" className="form-control shadow-none" placeholder="Your Email" />
                         <button className="btn btn-outline-secondary btn-subscribe shadow-none" type="button" id="button-addon2">Subscribe</button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

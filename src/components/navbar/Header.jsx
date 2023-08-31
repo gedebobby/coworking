@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 
-
-// import './style.css';
 import './style1.css';
 import RegisTest from './RegisTest';
 
@@ -33,13 +31,13 @@ const Header = ({paket, tipe_paket}) => {
       <div id="header">
         <nav className={`navbar navbar-expand-sm fixed-top sticky-nav ${stickyClass}`}>
           <div className="container">
-              <a className="navbar-brand text-white" href="#">NIEC Yogyakarta <br /> Co-Working Space</a>
+              <a className="navbar-brand text-white" href="#">NIEC Student Hub & <br />Co-Working Space <br /> Yogyakarta</a>
               <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarExample-expand-sm" aria-controls="offcanvasNavbarExample-expand-sm">
                   <span className="navbar-toggler-icon" data-bs-target="#offcanvasNavbarExample-expand-sm"></span>
               </button>
               <div className="offcanvas offcanvas-end" data-bs-hideresize="true" tabIndex="-1" id="offcanvasNavbarExample-expand-sm" aria-labelledby="offcanvasNavbarExample-expand-smLabel" aria-hidden="true">
                   <div className="offcanvas-header">
-                      <h5 className="offcanvas-title" id="offcanvasLabel">NIEC Yogyakarta <br />Co-Working Space</h5>
+                      <h5 className="offcanvas-title" id="offcanvasLabel">NIEC Student Hub & <br />Co-Working Space <br /> Yogyakarta</h5>
                       <button type="button" className="btn-close shadow-none text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div className="offcanvas-body">

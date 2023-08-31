@@ -11,6 +11,8 @@ function App() {
 
   const [tipe_paket, setTipePaket] = useState('')
   const [paket, setPaket] = useState('')
+  const key = '10936e153cc73190ef8b276661e85b8049f7bff74ed45b3908c4e467c6793e4b2539abc73f0e4fd3c145f327ecc1bbe0300ba10d16386b151c2c9fb271bdee8b';
+    
 
   useEffect(() => {
     getTipePaket();
@@ -22,7 +24,7 @@ function App() {
   }
 
   const getTipePaket = () => {
-    axios.get('http://103.41.205.87:2223/api/office')
+    axios.get('http://103.41.205.87/coworking/booking-plan', { 'headers': { Authorization: `Bearer ${key}` } })
     .then(data => setTipePaket(data.data))
     .catch(err => console.log(err))
   }

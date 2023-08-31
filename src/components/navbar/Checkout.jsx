@@ -8,7 +8,7 @@ import './checkoutStyle.css'
 const Checkout = () => {
   const location = useLocation()
   const navigate = useNavigate()
-  const [diffDay, setDiffDay] = useState('')
+  // const [diffDay, setDiffDay] = useState('')
   const [loading, setLoading] = useState(false)
   const [snapToken, setSnapToken] = useState('')
   const key = '10936e153cc73190ef8b276661e85b8049f7bff74ed45b3908c4e467c6793e4b2539abc73f0e4fd3c145f327ecc1bbe0300ba10d16386b151c2c9fb271bdee8b';
@@ -44,7 +44,7 @@ const Checkout = () => {
                 Swal.fire({
                   icon: 'success',
                   title: 'Terima Kasih Sudah Memesan',
-                  text: 'Pembayaran Sewa Office NIEC Yogyakrta Co-Working Space Berhasil! Silahkan Cek Email Anda',
+                  text: 'Pembayaran Sewa Office NIEC Student Hub & Co-Working Space Yogyakarta Berhasil! Silahkan Cek Email Anda',
                   confirmButtonText: 'Ok'
                 }).then((result)=>{
                   if (result.isConfirmed) {
@@ -69,7 +69,7 @@ const Checkout = () => {
               Swal.fire({
                 icon: 'success',
                 title: 'Terima Kasih Sudah Memesan',
-                text: 'Pembayaran Sewa Office NIEC Yogyakrta Co-Working Space Berhasil! Silahkan Cek Email Anda',
+                text: 'Pembayaran Sewa Office NIEC Student Hub & Co-Working Space Yogyakarta Berhasil! Silahkan Cek Email Anda',
                 confirmButtonText: 'Ok'
               }).then((result)=>{
                 if (result.isConfirmed) {
@@ -104,7 +104,7 @@ const Checkout = () => {
       Swal.fire({
         icon: 'success',
         title: 'Terima Kasih Sudah Registrasi',
-        text: 'Registrasi Visitor Office NIEC Yogyakrta Co-Working Space Berhasil! Silahkan Cek Email Anda',
+        text: 'Registrasi Visitor Office NIEC Student Hub & Co-Working Space Yogyakarta Silahkan Cek Email Anda',
         confirmButtonText: 'Ok'
       }).then((result)=>{
         if (result.isConfirmed) {
@@ -116,9 +116,9 @@ const Checkout = () => {
   }
 
   useEffect(()=>{
-    let Difference_In_Time = date2.getTime() - date1.getTime();
-    let dayDiff = Difference_In_Time / (3600 *1000 * 24);
-    setDiffDay(dayDiff)  
+    // let Difference_In_Time = date2.getTime() - date1.getTime();
+    // let dayDiff = Difference_In_Time / (3600 *1000 * 24);
+    // setDiffDay(dayDiff)  
   }, [])
     
   return (
@@ -127,8 +127,8 @@ const Checkout = () => {
     <div id="checkout">
       <div className="container">
         <div className="detail-booking card">
-          <a className=" navbar-brand" href="#">NIEC Yogyakarta <br /> Co-Working Space</a>
-          <p className='address'>Jalan Kemana No. 12 XVI Blokade</p>
+          <a className=" navbar-brand" href="#">NIEC Student Hub &  <br /> Co-Working Space <br />Yogyakarta</a>
+          <p className='address'></p>
           <h2 className='title'>DETAIL BOOKING</h2>
           <table className='profile'>
             <tr>
@@ -167,15 +167,6 @@ const Checkout = () => {
             </tbody>
             </table>
           </div>
-          {/* <h5>Nama : {location?.state.nama_penyewa}</h5>
-          <h5>Nama Perusahaan : {location?.state.nama_perusahaan}</h5>
-          <h5>Email : {location?.state.email}</h5>
-          <h5>Telepon : {location?.state.telepon}</h5>
-          <hr />
-          <div className="total-price d-flex justify-content-between mb-5">
-            <h4>OFFICE 2 ( {diffDay} Hari x {location?.state.harga} )</h4>
-            <h3>Total : Rp. {location?.state.total_harga}</h3>
-          </div> */}
           {
            location?.state?.tipe_paket === '1' ? (<button onClick={handleSubmitVisitor} disabled={loading} className='btn btn-success btn-pay'>Registrasi</button>) : 
            (<button onClick={handleSubmitCheckout} className='btn btn-success btn-pay'>Bayar</button>) 

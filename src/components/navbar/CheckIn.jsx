@@ -4,8 +4,9 @@ import Swal from 'sweetalert2'
 import './checkinStyle.css'
 
 function CheckIn() {
-    const [intialValue, setInitialValue] = useState([])
-    const [codeBooking, setCodeBooking] = useState([])
+    // const [intialValue, setInitialValue] = useState([])
+    const [codeBooking, setCodeBooking] = useState([])    
+    const key = '10936e153cc73190ef8b276661e85b8049f7bff74ed45b3908c4e467c6793e4b2539abc73f0e4fd3c145f327ecc1bbe0300ba10d16386b151c2c9fb271bdee8b';
 
     const handleInput = (e) => {
         const {name, value} = e.target
@@ -14,13 +15,20 @@ function CheckIn() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(codeBooking);
-        axios.post('http://103.41.205.87:2223/api/checkin-registration', codeBooking)
+        axios({
+            method: 'POST',
+            url: 'http://103.41.205.87/coworking/checkin-registration',
+            data: codeBooking,
+            headers: {
+                Authorization: `Bearer ${key}`
+            }
+        })
         .then( (res) => {
             console.log(res.data);
                 Swal.fire({
                     icon: res.data.status,
                     title: res.data.msg,
-                    timer: 5000,
+                    timer: 6000,
                     // showConfirmButton: false
                   })    
         }
