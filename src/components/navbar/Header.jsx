@@ -8,8 +8,8 @@ const Header = ({paket, tipe_paket}) => {
   const menu = [
     {id: 1,title: 'Home', href: '#header'},
     {id: 2,title: 'Pricing', href: '#pricing'},
-    {id: 3,title: 'Why', href: '#why-us'},
-    // {id: 4,title: 'Contact', href: '#'},
+    {id: 3,title: 'Virtual Mailbox', href: '#mailbox'},
+    {id: 4,title: 'Why', href: '#why-us'},
   ];
   const [stickyClass, setStickyClass] = useState('');
 

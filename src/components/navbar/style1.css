@@ -195,6 +195,57 @@ form .btn-order:hover{
     border: 1px #ffc107 solid;
     color: #ffc107;
 }
+/* -------- */
+
+/* MAILBOX */
+.mailbox {
+    /* background: #cecece; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.mailbox-desc {
+    width: 90%;
+}
+
+.mailbox-desc .title {
+    margin-bottom: 30px;
+    font-family: 'Martel', serif;
+}
+
+.mailbox-desc .paragraph {
+    font-family: "Montserrat", Helvetica;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.mailbox-benefit {
+    /* background: red; */
+    padding: 30px 40px;
+    border-radius: 10px;     
+    border: 2px solid #EFF1F3;
+}
+
+.mailbox-benefit .header {
+    font-family: 'Inter', sans-serif;
+}
+
+.mailbox-benefit .content .benefit{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.mailbox-benefit .footer {
+    text-align: center;
+}
+
+.mailbox-benefit .footer .btn-mailbox {
+    width: 100%;
+    height: 50px;
+    background-color: #ffc107;
+    box-shadow: none;
+}
+/* ------ */
 
 /* GALLERY */
 #gallery {
@@ -290,7 +341,11 @@ form .btn-order:hover{
 input::placeholder {
     font-family: 'Inter', sans-serif;
 }
-
+@media only screen and (max-device-width: 425px) {
+    .mailbox-benefit {
+        margin-top: 50px;
+    }
+}
 @media only screen and (max-device-width: 767px) {
 
     #header {
@@ -634,8 +689,13 @@ input::placeholder {
    }
 
    .pricing .pricing-main .pricing-box {
+    height: 500px;
     width: 290px;
     padding: 30px 30px;
+   }
+
+   .pricing .pricing-main .pricing-box .btn-visitplan {
+        margin-top: 172px;
    }
 
    .pricing-box .pricing-box-header h3 {
@@ -653,6 +713,12 @@ input::placeholder {
    .pricing-price .time {
     font-size: 15px;
    }
+
+   .mailbox-benefit{
+    padding: 30px 30px;
+   }
+
+   .mail
 
    .footer-menu input {
     width: 10px;
@@ -729,7 +795,12 @@ input::placeholder {
    .pricing .pricing-main .pricing-box {
     width: 350px;
     padding: 30px 30px;
+    height: 500px;
    }
+
+   .pricing .pricing-main .pricing-box .btn-visitplan {
+    margin-top: 152px;
+}
 
    .pricing-box .pricing-box-header h3 {
     font-size: 3em;

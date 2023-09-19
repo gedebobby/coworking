@@ -3,6 +3,7 @@ import axios from 'axios'
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2'
 import './checkoutStyle.css'
+import API from './API_URL'
 
 
 const Checkout = () => {
@@ -31,7 +32,7 @@ const Checkout = () => {
     if (snapToken === '') {
       axios({
         method: 'POST',
-        url: 'http://103.41.205.87/coworking/booking',
+        url: API.api + 'booking',
         data: data,
         headers: {
             Authorization: `Bearer ${key}`
@@ -93,7 +94,7 @@ const Checkout = () => {
     setLoading(true)
     axios({
       method: 'POST',
-      url: 'http://103.41.205.87/coworking/booking',
+      url: API.api + 'booking',
       data: data,
       headers: {
           Authorization: `Bearer ${key}`

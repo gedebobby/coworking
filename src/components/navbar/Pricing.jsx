@@ -26,25 +26,25 @@ const Pricing = ({tipe_paket, handleSelect}) => {
                   <div className="pricing-price d-flex">
                     <span className='currency '>Rp</span>
                     <span className='price'>{tipe_paket[0]?.harga.toLocaleString()}</span>
-                    <span className='time align align-self-end'>/day</span>
+                    {/* <span className='time align align-self-end'>/day</span> */}
                   </div>
                 </div>
                 {/* -------- */}
                 <div className="pricing-facility">
                   <div className="header">
-                    <h5>Include</h5>
-                    <p>Everything you get in this plan</p>
+                    <h5>Visit Our Co-working</h5>
+                    <p>You will get an office tour</p>
                   </div>
                   <div className="plan">
-                    <ul>
+                    {/* <ul>
                       <li><CheckIcon className='icon-check'></CheckIcon>WIFI</li>
                       <li><CheckIcon className='icon-check'></CheckIcon>Ruangan ber-AC</li>
                       <li><CheckIcon className='icon-check'></CheckIcon>1 Share Desk</li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 {/* -------- */}
-                <div className="pricing-footer text-center">
+                <div className="pricing-footer btn-visitplan text-center">
                 <Button onClick={() => handleSelect('1')} variant="contained" className='btn-order-pricing'>Pesan Sekarang</Button>
                 </div>
               </div>

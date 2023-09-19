@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import './checkinStyle.css'
+import API from './API_URL'
 
 function CheckIn() {
     // const [intialValue, setInitialValue] = useState([])
@@ -17,7 +18,7 @@ function CheckIn() {
         console.log(codeBooking);
         axios({
             method: 'POST',
-            url: 'http://103.41.205.87/coworking/checkin-registration',
+            url: API.api + 'checkin-registration',
             data: codeBooking,
             headers: {
                 Authorization: `Bearer ${key}`

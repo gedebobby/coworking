@@ -6,6 +6,8 @@ import WhyUs from './components/navbar/WhyUs';
 import Footer from './components/navbar/Footer';
 import Pricing from './components/navbar/Pricing';
 import Gallery from './components/navbar/Gallery';
+import Mailbox from './components/navbar/Mailbox';
+import API from './components/navbar/API_URL';
 
 function App() {
 
@@ -24,7 +26,7 @@ function App() {
   }
 
   const getTipePaket = () => {
-    axios.get('http://103.41.205.87/coworking/booking-plan', { 'headers': { Authorization: `Bearer ${key}` } })
+    axios.get(API.api + 'booking-plan', { 'headers': { Authorization: `Bearer ${key}` } })
     .then(data => setTipePaket(data.data))
     .catch(err => console.log(err))
   }
@@ -32,6 +34,7 @@ function App() {
     <>
     <Header paket={paket} tipe_paket={tipe_paket} />
     <Pricing handleSelect={handleSelect} tipe_paket={tipe_paket}/>
+    <Mailbox handleSelect={handleSelect} tipe_paket={tipe_paket}/>
     <Gallery/>
     <WhyUs/>
     <Footer/>

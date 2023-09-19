@@ -3,6 +3,7 @@ import axios from 'axios'
 import {Button} from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 import moment from 'moment';
+import API from './API_URL'
 
 
 const RegisTest = ({selectedPaket, tipe_paket}) => {
@@ -17,9 +18,7 @@ const RegisTest = ({selectedPaket, tipe_paket}) => {
 
     const handleInput = (e) => {
         const { name, value } = e.target
-        setRegis({
-            ...regis, [name]: value
-        })
+        console.log(name, value);
     }
 
     const handleSelect = (e) => {
@@ -39,11 +38,17 @@ const RegisTest = ({selectedPaket, tipe_paket}) => {
             if (regis.start_date) {
                 regis.end_date = moment(regis.start_date).add(regis.lama_bulan, 'month').toJSON().slice(0, 10)
             }
+        } else if (paket === '4') {
+            if (regis.start_date) {
+                regis.end_date = moment(regis.start_date).add(1, 'month').toJSON().slice(0, 10)
+            }
         }
+
+        // return console.log(regis);
 
         axios({
             method: 'POST',
-            url: 'http://103.41.205.87/coworking/checkout-detail',
+            url: API.api + 'checkout-detail',
             data: regis,
             headers: {
                 Authorization: `Bearer ${key}`
@@ -123,6 +128,14 @@ const RegisTest = ({selectedPaket, tipe_paket}) => {
                                 <option value={m}>{m} Bulan</option>
                             ))}
                         </select>
+                        <label htmlFor='date1' className='form-label mb-0'>Start Date</label> 
+                        <input type="date" name='start_date' id='date1' className={`form-control ${error.start_date ? 'is-invalid' : ''}`} onChange={handleInput} />
+                        <div className="invalid-feedback">
+                            {error.start_date}
+                        </div>
+                    </>
+                ) : (paket === '4') ? (
+                    <>
                         <label htmlFor='date1' className='form-label mb-0'>Start Date</label> 
                         <input type="date" name='start_date' id='date1' className={`form-control ${error.start_date ? 'is-invalid' : ''}`} onChange={handleInput} />
                         <div className="invalid-feedback">
